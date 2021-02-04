@@ -7,8 +7,9 @@ public class BankAccount {
         return amount;
     }
 
-    public void deposit(double sum) {
+    public double deposit(double sum) {
         System.out.println("Вы положили на счёт: "+(amount+=sum));
+        return amount;
     }
 
     public void withDraw(int sum) throws LimitException {
